@@ -1,5 +1,5 @@
 /*Patti Liles - Assignment Module Three*/
-/*January 24, 2020*/
+/*January 27, 2020*/
 
 /********** Base styles **********/
 *{
@@ -10,23 +10,22 @@
 
 
 body {
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   font-family: Arial, Helvetica, Sans-serif;
   background-color: #fff;
  }
 
 
-.container{
+#main-content{
   position: relative;
   float:left;
   height: 100%;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 15px;
-
-}
+  padding-right: 20px;
+ }
 
 #Menu-Items{
   position: relative;
@@ -46,8 +45,7 @@ color: black;
 
 
 h2 {
-  background-color: #fff;
-  margin-bottom: 30px;
+   vertical-align: middle; 
   }
 
 h3 {
@@ -69,14 +67,17 @@ p{
 /** HEADER of Navbar **/
 #header-nav {
   position: relative;
-  background-color: #B0BEC5;
+  background-color: pink;
   border: 1px solid black;
   border-radius: 0;
   border: 0;
+  margin-bottom: 0;
  }
 
 .navbar-brand {
-height:100px;
+font-size: 2em;
+color: black;
+font-weight: Bold;
 padding-top: 25px;
 }
 
@@ -88,7 +89,7 @@ padding-top: 25px;
 }
 
 #nav-list a {
-color: #951C49;
+color: #F781F3;
 text-align: center;
 margin-top: 10px;
 margin-bottom: 10px;
@@ -107,7 +108,7 @@ margin-bottom: 10px;
 
 /*This formats color of the button, three horizontal bars and boarder.*/
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 2px solid #3C583A;  
 
 }
 
@@ -115,12 +116,19 @@ margin-bottom: 10px;
 
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -50px;
+  margin-top: -35px;
+  margin-right: 15px;
 }
 
 /********** Desk Top devices only *md*******/
 
 @media (min-width: 992px) {
+
+.col-md{float left;}
+
+.col-md {
+    width: 100%;
+  }
 
 #nav-list a{
 display: none;
@@ -131,6 +139,12 @@ display: none;
 /********** Tablet devices only *sm*******/
 @media (min-width: 768px) and (max-width: 991px) {
 
+.col-sm{float left;}
+
+.col-sm {
+    width: 100%;
+  }
+
 #nav-list a{
 display: none;
 }
@@ -139,14 +153,27 @@ display: none;
 /********** Mobile devices only *xs*******/
 @media (max-width: 767px) {
 
+.col-xs{float left;}
+
+.col-xs {
+    width: 100%;
+  }
+
 #nav-list a{
+font-size: 18px;
 color: black;
 font-weight: Bold;
 }
 
 #collapsable-nav{
-background-color: #fff;
 margin-bottom: 0;
 border: 1px solid black;
+background-color: #F781F3;
 }
+
+#main-content{
+padding-left: 45px;
+padding-right: 55px;
+}
+
 }
